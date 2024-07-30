@@ -10,7 +10,7 @@ idna==3.7
 jmespath==1.0.1
 python-dateutil==2.9.0.post0
 pytz==2024.1
-requests==2.32.2
+requests==2.32.3
 s3transfer==0.10.2
 setuptools==70.0.0
 simplejson==3.17.2
