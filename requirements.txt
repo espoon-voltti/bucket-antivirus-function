@@ -12,7 +12,7 @@ python-dateutil==2.9.0.post0
 pytz==2024.1
 requests==2.32.3
 s3transfer==0.10.2
-setuptools==74.1.0
+setuptools==74.1.2
 simplejson==3.19.3
 six==1.16.0
 urllib3==2.2.2
