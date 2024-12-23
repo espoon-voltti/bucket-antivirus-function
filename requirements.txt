@@ -1,6 +1,6 @@
 awslambdaric==3.0.0
-boto3==1.35.82
-botocore==1.35.82
+boto3==1.35.87
+botocore==1.35.87
 certifi==2024.12.14
 chardet==5.2.0
 charset-normalizer==3.4.0
@@ -15,4 +15,4 @@ s3transfer==0.10.4
 setuptools==75.6.0
 simplejson==3.19.3
 six==1.17.0
-urllib3==2.2.3
+urllib3==2.3.0
