@@ -3,6 +3,6 @@ boto3
 
 # Test requirements
 coverage
-mock==5.1.0
+mock==5.2.0
 pynose
 flake8
