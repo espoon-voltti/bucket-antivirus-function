@@ -1,0 +1,54 @@
+// SPDX-FileCopyrightText: 2024-2025 City of Espoo
+//
+// SPDX-License-Identifier: LGPL-2.1-or-later
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  timezone: 'Europe/Helsinki',
+  extends: [
+    'config:recommended',
+  ],
+  semanticCommits: 'disabled',
+  automergeStrategy: 'merge-commit',
+
+  // Wait for a version to be 3 days old before making a PR
+  minimumReleaseAge: '3 days',
+
+  // Update during weekends
+  schedule: ["* * * * 0,6"],
+
+  // Allow most 20 PRs open concurrently
+  prConcurrentLimit: 20,
+
+  // No rate limit for PR creation
+  prHourlyLimit: 0,
+
+  // Pin all dependencies to exact versions
+  rangeStrategy: 'pin',
+
+  // Deduplicate npm packages
+  postUpdateOptions: ['yarnDedupeHighest', 'npmDedupe'],
+
+  labels: ['dependencies'],
+
+  "ignorePaths": [
+  ],
+
+  packageRules: [
+    {
+      // Automerge patch versions of all dependencies
+      matchUpdateTypes: ['patch'],
+      automerge: true,
+    },
+    {
+      // Automerge minor and patch versions for devDependencies
+      matchDepTypes: ['devDependencies'],
+      matchUpdateTypes: ['minor', 'patch'],
+      automerge: true,
+    },
+    {
+      // Don't pin engines in package.json
+      matchDepTypes: ['engines'],
+      rangeStrategy: 'auto'
+    },
+  ],
+}
