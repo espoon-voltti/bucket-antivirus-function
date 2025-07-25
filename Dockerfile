@@ -1,4 +1,4 @@
-FROM public.ecr.aws/lambda/python:3.12 AS base
+FROM public.ecr.aws/lambda/python:3.13 AS base
 
 RUN dnf -y update \
  && dnf -y install \
