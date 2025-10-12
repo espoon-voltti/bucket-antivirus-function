@@ -1,7 +1,7 @@
 awslambdaric==3.1.1
 boto3==1.40.14
 botocore==1.40.48
-certifi==2025.8.3
+certifi==2025.10.5
 chardet==5.2.0
 charset-normalizer==3.4.3
 datadog==0.52.1
