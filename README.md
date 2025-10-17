@@ -365,7 +365,7 @@ Run lambda test stack locally using `docker-compose`:
 
 ```sh
 docker compose down -v
-docker commpose build
+docker compose build
 docker compose up
 ```
 
